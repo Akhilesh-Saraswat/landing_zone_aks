@@ -10,7 +10,8 @@ ui:
   port: 80
   ServicePort: 80
   ingress:
-    host: ui.jhandu.shop
+    host: ""
+    # host: ui.jhandu.shop
     # ingressClass: azure-application-gateway
 
 getTask:
@@ -23,7 +24,7 @@ getTask:
   ServicePort: 80
   connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:mssql-svc.default.svc.cluster.local,1433;Database=mydb;Uid=sa;Pwd=admin@123;Encrypt=no;TrustServerCertificate=yes;Connection Timeout=30;"
   ingress:
-    host: get-tasks-api.jhandu.shop
+    host: ""
     ingressClass: azure-application-gateway
 
 deleteTask:
@@ -36,7 +37,7 @@ deleteTask:
   ServicePort: 80
   connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:mssql-svc.default.svc.cluster.local,1433;Database=mydb;Uid=sa;Pwd=admin@123;Encrypt=no;TrustServerCertificate=yes;Connection Timeout=30;"
   ingress:
-    host: delete-task-api.jhandu.shop
+    host: ""
     ingressClass: azure-application-gateway
 
 addTask:
@@ -49,6 +50,6 @@ addTask:
   ServicePort: 80
   connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:mssql-svc.default.svc.cluster.local,1433;Database=mydb;Uid=sa;Pwd=admin@123;Encrypt=no;TrustServerCertificate=yes;Connection Timeout=30;"
   ingress:
-    host: add-task-api.jhandu.shop
+    host: ""
     ingressClass: azure-application-gateway
 
