@@ -50,7 +50,7 @@ aks_clusters = {
 
 key_vaults = {
   kv-prod = {
-    name                = "aks-keyvault"
+    name                = "aks-keyvault-test"
     location            = "Canada East"
     resource_group_name = "rg-aks"
     sku_name            = "standard"

@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Release.Name }}-todo-get-task-api
+  name: {{ .Values.getTask.Name }}-todo-get-task-api
 spec:
   type: ClusterIP
   selector:
-    app: {{ .Release.Name }}-todo-get-task-api
+    app: {{ .Values.getTask.Name }}-todo-get-task-api
   ports:
     - port: {{ .Values.getTask.ServicePort }}
       targetPort: {{ .Values.getTask.port }}
