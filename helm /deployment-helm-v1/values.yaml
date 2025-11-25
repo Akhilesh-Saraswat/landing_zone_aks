@@ -22,7 +22,7 @@ getTask:
     tag: v1
   port: 8000
   ServicePort: 80
-  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:mssql-svc.default.svc.cluster.local,1433;Database=mydb;Uid=sa;Pwd=admin@123;Encrypt=no;TrustServerCertificate=yes;Connection Timeout=30;"
+  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:mssql-svc.app.svc.cluster.local,1433;Database=mydb;Uid=sa;Pwd=admin@123;Encrypt=no;TrustServerCertificate=yes;Connection Timeout=30;"
   ingress:
     host: ""
     ingressClass: azure-application-gateway
@@ -35,7 +35,7 @@ deleteTask:
     tag: v1
   port: 8000
   ServicePort: 80
-  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:mssql-svc.default.svc.cluster.local,1433;Database=mydb;Uid=sa;Pwd=admin@123;Encrypt=no;TrustServerCertificate=yes;Connection Timeout=30;"
+  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:mssql-svc.app.svc.cluster.local,1433;Database=mydb;Uid=sa;Pwd=admin@123;Encrypt=no;TrustServerCertificate=yes;Connection Timeout=30;"
   ingress:
     host: ""
     ingressClass: azure-application-gateway
@@ -48,7 +48,7 @@ addTask:
     tag: v1
   port: 8000
   ServicePort: 80
-  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:mssql-svc.default.svc.cluster.local,1433;Database=mydb;Uid=sa;Pwd=admin@123;Encrypt=no;TrustServerCertificate=yes;Connection Timeout=30;"
+  connectionString: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:mssql-svc.app.svc.cluster.local,1433;Database=mydb;Uid=sa;Pwd=admin@123;Encrypt=no;TrustServerCertificate=yes;Connection Timeout=30;"
   ingress:
     host: ""
     ingressClass: azure-application-gateway
