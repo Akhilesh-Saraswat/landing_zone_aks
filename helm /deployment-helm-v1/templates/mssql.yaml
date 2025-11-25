@@ -41,3 +41,16 @@ spec:
     targetPort: 1433
   selector:
     app: mssql
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mssql-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 8Gi         # you can increase this
+  storageClassName: "default"      # use default StorageClass
+# storageClassName: default # optional, same result
