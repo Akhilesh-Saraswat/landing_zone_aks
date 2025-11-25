@@ -11,6 +11,7 @@ ui:
   ServicePort: 80
   ingress:
     host: ui.jhandu.shop
+    ingressClass: azure-application-gateway
 
 getTask:
   Name: gettask
