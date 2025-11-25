@@ -40,7 +40,7 @@ kind: Service
 metadata:
   name: mssql-svc
 spec:
-  type: ClusterIP
+  type: None
   ports:
   - port: 1433
     targetPort: 1433
