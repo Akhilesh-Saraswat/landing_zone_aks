@@ -1,5 +1,5 @@
 common:
-  containerRegistryURL: tododevacr1.azurecr.io
+  containerRegistryURL: tododevacr1-d4g4dmddb2ejehau.azurecr.io
   ingressClass: azure-application-gateway
 ui:
   Name: todo-ui
